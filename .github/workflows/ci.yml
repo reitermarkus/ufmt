@@ -64,6 +64,7 @@ jobs:
         if: ${{ matrix.no_panics }}
         run: |
           cd nopanic
+          cargo rustc -- --version
           cargo build --target ${{ matrix.target }} --examples --release
           size $(find target/${{ matrix.target }}/release/examples -executable -type f ! -name '*-*' | sort)
 
