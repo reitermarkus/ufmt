@@ -1,7 +1,5 @@
 //! `μfmt` macros
 
-#![deny(warnings)]
-
 extern crate proc_macro;
 
 use core::mem;

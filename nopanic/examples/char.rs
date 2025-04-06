@@ -8,6 +8,5 @@ use common::W;
 #[no_mangle]
 fn _start(c: char) {
     uwrite!(&mut W, "{}", c).unwrap();
-    // TODO
-    // uwrite!(&mut W, "{:?}", c).unwrap();
+    uwrite!(&mut W, "{:?}", c).unwrap();
 }

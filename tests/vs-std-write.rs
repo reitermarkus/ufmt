@@ -349,18 +349,18 @@ fn hex() {
     cmp!("{:#x}", 71);
 
     // extreme values
-    cmp!("{:x}", i8::min_value());
-    cmp!("{:x}", i8::max_value());
-    cmp!("{:x}", i16::min_value());
-    cmp!("{:x}", i16::max_value());
-    cmp!("{:x}", i32::min_value());
-    cmp!("{:x}", i32::max_value());
-    cmp!("{:x}", i64::min_value());
-    cmp!("{:x}", i64::max_value());
-    cmp!("{:x}", i128::min_value());
-    cmp!("{:x}", i128::max_value());
-    cmp!("{:x}", isize::min_value());
-    cmp!("{:x}", isize::max_value());
+    cmp!("{:x}", i8::MIN);
+    cmp!("{:x}", i8::MAX);
+    cmp!("{:x}", i16::MIN);
+    cmp!("{:x}", i16::MAX);
+    cmp!("{:x}", i32::MIN);
+    cmp!("{:x}", i32::MAX);
+    cmp!("{:x}", i64::MIN);
+    cmp!("{:x}", i64::MAX);
+    cmp!("{:x}", i128::MIN);
+    cmp!("{:x}", i128::MAX);
+    cmp!("{:x}", isize::MIN);
+    cmp!("{:x}", isize::MAX);
 
     // <i8 as std::fmt::Display>::fmt(-128)
 }
