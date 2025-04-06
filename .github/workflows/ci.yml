@@ -24,7 +24,7 @@ jobs:
 
           # no panics
           - target: thumbv7m-none-eabi
-            toolchain: stable
+            toolchain: nightly
             no_panics: true
 
           # miri
